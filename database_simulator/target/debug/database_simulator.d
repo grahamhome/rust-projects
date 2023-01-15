@@ -1,1 +1,0 @@
-/home/graham/Development/rust/database_simulator/target/debug/database_simulator: /home/graham/Development/rust/database_simulator/src/fn_pointer.rs /home/graham/Development/rust/database_simulator/src/fn_trait.rs /home/graham/Development/rust/database_simulator/src/main.rs /home/graham/Development/rust/database_simulator/src/trait_object.rs
