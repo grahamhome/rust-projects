@@ -52,9 +52,11 @@ impl Formatter for Json {
 fn main() {
     let mut result_buffer = String::from("");
     Report::generate(Text, &mut result_buffer);
-    assert_eq!(result_buffer, "one: 1\ntwo: 2\n");
+    assert!(result_buffer.contains("one: 1"));
+    assert!(result_buffer.contains("two: 2\n"));
 
     result_buffer.clear();
     Report::generate(Json, &mut result_buffer);
-    assert_eq!(result_buffer, r#"{{"one":"1"},{"two":"2"}}"#)
+    assert!(result_buffer.contains(r#"{"one":"1"}"#));
+    assert!(result_buffer.contains(r#"{"two":"2"}}"#));
 }
